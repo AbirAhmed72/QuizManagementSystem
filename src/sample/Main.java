@@ -19,7 +19,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        launch(args);
         System.out.println("Git parbo in sha Allah");
+        launch(args);
+        System.out.println("Git parsi Alhamdulillah. 4th commit here");
     }
 }
