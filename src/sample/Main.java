@@ -19,7 +19,7 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Welcome to QuizBiz");
-        primaryStage.setScene(new Scene(root, 900, 600, Color.BLACK));
+        primaryStage.setScene(new Scene(root, 651, 540, Color.BLACK));
         primaryStage.show();
     }
 
