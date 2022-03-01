@@ -18,7 +18,7 @@ public class Main extends Application {
         stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Welcome to QuizBiz");
+        primaryStage.setTitle("QuizBiz.exe");
         primaryStage.setScene(new Scene(root, 651, 540, Color.BLACK));
         primaryStage.show();
     }
