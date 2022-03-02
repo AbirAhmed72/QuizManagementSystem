@@ -17,7 +17,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
         primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
         primaryStage.setTitle("QuizBiz.exe");
         primaryStage.setScene(new Scene(root, 651, 540, Color.BLACK));
         primaryStage.show();
@@ -30,9 +30,6 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-
-        System.out.println("Git parbo in sha Allah");
-        System.out.println("Git parsi Alhamdulillah. 4th commit here");
         launch(args);
     }
 }
