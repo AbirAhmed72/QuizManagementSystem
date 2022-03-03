@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomepageController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="651.0" layoutX="1.0" opacity="0.22" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/quiz bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="120.0" fitWidth="129.0" layoutX="361.0" layoutY="71.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/quizbizLogo (2).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="44.0" prefHeight="85.0" prefWidth="192.0" text="Welcome To">
+         <font>
+            <Font name="Comic Sans MS Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="142.0" text="Where you learn while quizzing">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="327.0" layoutY="329.0" opacity="0.5" rotate="-90.0" startX="-100.0" strokeWidth="2.0" />
+      <Label layoutX="81.0" layoutY="292.0" text="Login as an Admin">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="228.0" text="Login as a Student">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="321.0" text="OR">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="353.0" text="Signup as a Student">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="adLogProceed" layoutX="111.0" layoutY="338.0" mnemonicParsing="false" onAction="#adminLoginProceed" prefHeight="26.0" prefWidth="117.0" text="Proceed" textFill="#02497f">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="stuLogProceed" layoutX="432.0" layoutY="277.0" mnemonicParsing="false" onAction="#studentLoginProceed" prefHeight="26.0" prefWidth="117.0" text="Proceed" textFill="#ffac3d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="stuSignProceed" layoutX="432.0" layoutY="399.0" mnemonicParsing="false" onAction="#studentSigninProceed" prefHeight="26.0" prefWidth="117.0" text="Proceed" textFill="#ffab3d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
