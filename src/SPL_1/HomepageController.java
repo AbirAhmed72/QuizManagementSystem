@@ -1,4 +1,4 @@
-package sample;
+package SPL_1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

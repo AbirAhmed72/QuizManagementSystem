@@ -1,4 +1,4 @@
-package sample;
+package SPL_1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,18 +11,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class AdminLoginController {
+public class StudentLoginController {
 
     @FXML
-    private Button adminLogin;
+    private Button studentLogin;
     @FXML
-    private Label adminError;
+    private Label studentError;
     @FXML
-    private TextField adminUser;
+    private TextField studentUser;
     @FXML
-    private PasswordField adminPassword;
+    private PasswordField studentPassword;
 
-    public void adminLoginButton(ActionEvent event) throws IOException {
+    public void studentLoginButton(ActionEvent event) throws IOException {
         checkLogin();
 
     }
@@ -36,11 +36,10 @@ public class AdminLoginController {
 //        System.out.println("storedUsername: " + storedUsername);
 //        System.out.println("storedPassword: " + storedPassword);
 
-
         try {
-            File usernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
+            File usernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentUsername.txt");
             //System.out.println(usernameFile.getAbsolutePath());
-            File passwordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
+            File passwordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentPassword.txt");
             //System.out.println(passwordFile.getAbsolutePath());
 
             Scanner usernameScanner = new Scanner(usernameFile);
@@ -59,18 +58,18 @@ public class AdminLoginController {
 //        System.out.println("storedUsername: " + storedUsername);
 //        System.out.println("storedPassword: " + storedPassword);
 
-        if(adminUser.getText().toString().equals(storedUsername) && adminPassword.getText().toString().equals(storedPassword)) {
-            adminError.setText("Success!");
+        if(studentUser.getText().toString().equals(storedUsername) && studentPassword.getText().toString().equals(storedPassword)) {
+            studentError.setText("Success!");
 
-            m.changeScene("adminDashboard.fxml");
+            m.changeScene("studentDashboard.fxml");
         }
 
-        else if(adminUser.getText().isEmpty() || adminPassword.getText().isEmpty()) {
-            adminError.setText("Please enter your credentials!");
+        else if(studentUser.getText().isEmpty() || studentPassword.getText().isEmpty()) {
+            studentError.setText("Please enter your credentials!");
         }
 
         else {
-            adminError.setText("Wrong username or password!");
+            studentError.setText("Wrong username or password!");
         }
     }
 }
