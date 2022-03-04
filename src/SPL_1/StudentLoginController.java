@@ -16,11 +16,19 @@ public class StudentLoginController {
     @FXML
     private Button studentLogin;
     @FXML
+    private Button studentLoginBack;
+    @FXML
     private Label studentError;
     @FXML
     private TextField studentUser;
     @FXML
     private PasswordField studentPassword;
+
+    public void studentLoginBackButton(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("homepage.fxml");
+
+    }
 
     public void studentLoginButton(ActionEvent event) throws IOException {
         checkLogin();
