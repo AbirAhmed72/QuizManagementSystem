@@ -10,10 +10,16 @@ public class AdminDashboardController {
 
     @FXML
     private Button adminDashboardBack;
+    @FXML
+    private Button addQuestions;
 
     public void adminDashboardBackButton(ActionEvent event) throws IOException {
         Main m = new Main();
         m.changeScene("homepage.fxml");
+    }
 
+    public void addQuestionsButton(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("addQuestions.fxml");
     }
 }

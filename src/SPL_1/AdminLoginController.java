@@ -11,6 +11,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static SPL_1.DES.doDecrypt;
+import static SPL_1.DES.doEncrypt;
+
 public class AdminLoginController {
 
     @FXML
@@ -51,6 +54,9 @@ public class AdminLoginController {
             File adminPasswordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
             //System.out.println(adminPasswordFile.getAbsolutePath());
 
+            //doEncrypt();
+
+
             Scanner usernameScanner = new Scanner(adminUsernameFile);
             Scanner passwordScanner = new Scanner(adminPasswordFile);
 
@@ -63,6 +69,8 @@ public class AdminLoginController {
             System.out.println("Exception caught.");
             e.printStackTrace();
         }
+
+        //doDecrypt();
 
 //        System.out.println("storedUsername: " + storedUsername);
 //        System.out.println("storedPassword: " + storedPassword);
