@@ -17,34 +17,29 @@
                   <Image url="@../Images/quiz bg.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="240.0" fitWidth="270.0" layoutX="190.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/under construction.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="120.0" fitWidth="129.0" layoutX="84.0" layoutY="78.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/quizbizLogo (2).png" />
-               </image>
-            </ImageView>
-            <Label alignment="CENTER" layoutX="213.0" layoutY="47.0" prefHeight="85.0" prefWidth="345.0" text="Is Under Construction!">
+            <Button fx:id="adminDashboardBack" layoutX="59.0" layoutY="29.0" mnemonicParsing="false" onAction="#adminDashboardBackButton" prefHeight="34.0" prefWidth="87.0" text="&lt;- Back" textFill="RED">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="199.0" layoutY="98.0" text="Admin Dashboard">
                <font>
                   <Font name="Comic Sans MS Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="83.0" layoutY="125.0" prefHeight="59.0" prefWidth="490.0" text="We Are Extremely Sorry For The Inconvenience!">
+            <Button fx:id="addQuestions" layoutX="200.0" layoutY="217.0" mnemonicParsing="false" onAction="#addQuestionsButton" prefHeight="41.0" prefWidth="253.0" text="Add Questions" textFill="#02497f">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
-            </Label>
-            <Label layoutX="148.0" layoutY="457.0" text="Stay Tuned For The Next Update...">
+            </Button>
+            <Button layoutX="199.0" layoutY="299.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Input Percentage" textFill="#ffac3d">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
-            </Label>
-            <Button fx:id="adminDashboardBack" layoutX="59.0" layoutY="29.0" mnemonicParsing="false" onAction="#adminDashboardBackButton" prefHeight="34.0" prefWidth="87.0" text="&lt;- Back" textFill="RED">
+            </Button>
+            <Button layoutX="199.0" layoutY="383.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
                <font>
-                  <Font name="Comic Sans MS" size="16.0" />
+                  <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
          </children>
