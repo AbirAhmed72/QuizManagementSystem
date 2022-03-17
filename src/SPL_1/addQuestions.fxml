@@ -1,14 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="SPL_1.AddQuestionsController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SPL_1.AddQuestionsController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="651.0">
+               <children>
+                  <ImageView fitHeight="540.0" fitWidth="651.0" layoutX="1.0" opacity="0.22" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/quiz bg.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="addQuestionsBack" layoutX="60.0" layoutY="14.0" mnemonicParsing="false" onAction="#addQuestionsBackButton" prefHeight="34.0" prefWidth="87.0" text="&lt;- Back" textFill="RED">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="194.0" layoutY="48.0" prefHeight="42.0" text="Add Questions here">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="132.0" text="Question:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="questionsField" alignment="CENTER" layoutX="178.0" layoutY="125.0" prefHeight="42.0" prefWidth="436.0" promptText="Enter Your Question Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="58.0" layoutY="194.0" text="Option 1:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstOptionField" alignment="CENTER" layoutX="178.0" layoutY="191.0" prefHeight="34.0" prefWidth="436.0" promptText="Enter First Option Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="58.0" layoutY="256.0" text="Option 2:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="secondOptionField" alignment="CENTER" layoutX="178.0" layoutY="253.0" prefHeight="34.0" prefWidth="436.0" promptText="Enter Second Option Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="58.0" layoutY="311.0" text="Option 3:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="thirdOptionField" alignment="CENTER" layoutX="178.0" layoutY="308.0" prefHeight="34.0" prefWidth="436.0" promptText="Enter Third Option Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="58.0" layoutY="374.0" text="Option 4:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fourthOptionField" alignment="CENTER" layoutX="178.0" layoutY="371.0" prefHeight="34.0" prefWidth="436.0" promptText="Enter Fourth Option Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="59.0" layoutY="437.0" text="Correct Ans:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="correctAnswerField" alignment="CENTER" layoutX="183.0" layoutY="434.0" prefHeight="34.0" prefWidth="427.0" promptText="Enter Correct Answer Here">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="saveQuestions" layoutX="194.0" layoutY="492.0" mnemonicParsing="false" onAction="#saveQuestionsButton" prefHeight="34.0" prefWidth="290.0" text="Save Questions!" textFill="#00d732">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="questionsErrorLabel" layoutX="254.0" layoutY="99.0" prefHeight="19.0" prefWidth="197.0" textFill="RED">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

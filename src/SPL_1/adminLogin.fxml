@@ -21,7 +21,7 @@
             <Font name="Comic Sans MS Bold" size="40.0" />
          </font>
       </Label>
-      <Label fx:id="adminError" alignment="CENTER" layoutX="221.0" layoutY="152.0" prefHeight="22.0" prefWidth="225.0" textFill="RED">
+      <Label fx:id="adminError" alignment="CENTER" layoutX="202.0" layoutY="152.0" prefHeight="22.0" prefWidth="260.0" textFill="RED">
          <font>
             <Font name="Comic Sans MS" size="15.0" />
          </font>
