@@ -6,6 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class AddQuestionsController {
@@ -35,7 +38,26 @@ public class AddQuestionsController {
     }
     public void saveQuestionsButton(ActionEvent event) throws IOException {
 
+        String question = questionsField.getText();
+        String firstOption = firstOptionField.getText();
+        String secondOption = secondOptionField.getText();
+        String thirdOption = thirdOptionField.getText();
+        String fourthOption = fourthOptionField.getText();
+        String correctAnswer = correctAnswerField.getText();
 
+        try{
+            FileWriter questionsFileWriter = new FileWriter("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt", true);
+            BufferedWriter qBufferedWriter = new BufferedWriter(questionsFileWriter);
+
+            qBufferedWriter.write("" + question + "\n" + firstOption + "\n" + secondOption + "\n" +
+                    thirdOption + "\n" + fourthOption + "\n" + correctAnswer + "\n");
+
+            qBufferedWriter.close();
+
+        }catch(Exception e){
+        System.out.println("Exception caught.");
+        e.printStackTrace();
+    }
         if(questionsField.getText().isEmpty() || firstOptionField.getText().isEmpty() ||
                 secondOptionField.getText().isEmpty() || thirdOptionField.getText().isEmpty() ||
                 fourthOptionField.getText().isEmpty() || correctAnswerField.getText().isEmpty()){
