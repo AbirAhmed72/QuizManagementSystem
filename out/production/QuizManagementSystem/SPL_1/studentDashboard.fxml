@@ -10,48 +10,39 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SPL_1.StudentDashboardController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="651.0">
          <children>
-            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="651.0">
-               <children>
-                  <ImageView fitHeight="540.0" fitWidth="651.0" layoutX="1.0" opacity="0.22" pickOnBounds="true">
-                     <image>
-                        <Image url="@../Images/quiz bg.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="240.0" fitWidth="270.0" layoutX="190.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/under construction.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="120.0" fitWidth="129.0" layoutX="84.0" layoutY="78.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/quizbizLogo (2).png" />
-                     </image>
-                  </ImageView>
-                  <Label alignment="CENTER" layoutX="213.0" layoutY="47.0" prefHeight="85.0" prefWidth="345.0" text="Is Under Construction!">
-                     <font>
-                        <Font name="Comic Sans MS Bold" size="30.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="83.0" layoutY="125.0" prefHeight="59.0" prefWidth="490.0" text="We Are Extremely Sorry For The Inconvenience!">
-                     <font>
-                        <Font name="Comic Sans MS Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="148.0" layoutY="457.0" text="Stay Tuned For The Next Update...">
-                     <font>
-                        <Font name="Comic Sans MS Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="studentDashboardBack" layoutX="59.0" layoutY="29.0" mnemonicParsing="false" onAction="#studentDashboardBackButton" prefHeight="34.0" prefWidth="87.0" text="&lt;- Back" textFill="RED">
-                     <font>
-                        <Font name="Comic Sans MS Bold" size="16.0" />
-                     </font>
-                  </Button>
-               </children>
-            </Pane>
+            <ImageView fitHeight="540.0" fitWidth="651.0" layoutX="1.0" opacity="0.22" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/quiz bg.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="studentDashboardBack" layoutX="200.0" layoutY="420.0" mnemonicParsing="false" onAction="#studentDashboardBackButton" prefHeight="41.0" prefWidth="253.0" text="Log Out" textFill="RED">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="185.0" layoutY="78.0" text="Student Dashboard">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="startQuiz" layoutX="200.0" layoutY="178.0" mnemonicParsing="false" onAction="#startQuizButton" prefHeight="41.0" prefWidth="253.0" text="Start Quiz" textFill="#02497f">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="200.0" layoutY="249.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="View Answersheet" textFill="#ffac3d">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="200.0" layoutY="323.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
          </children>
-      </AnchorPane>
+      </Pane>
    </children>
 </AnchorPane>
