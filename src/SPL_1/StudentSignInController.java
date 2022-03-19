@@ -75,9 +75,10 @@ public class StudentSignInController {
         //String studentDOB = studentSetDOB.getValue().toString();
         String studentMail = studentSetMail.getText().toString();
         String studentPass = studentSetPass.getText().toString();
+        String error = "Please fillout all the fields!";
 
         if(studentName.isEmpty() || studentAddress.isEmpty() || studentMail.isEmpty() || studentPass.isEmpty()){
-            studentSignInError.setText(("Please fillout all the fields!"));
+            studentSignInError.setText(error);
         }
 
         else if(studentPass.length() < 6) {
