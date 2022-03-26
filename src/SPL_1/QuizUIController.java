@@ -1,5 +1,6 @@
 package SPL_1;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,12 +12,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static SPL_1.RandomNumberGenerator.randomNumbers;
 
 public class QuizUIController extends RandomNumberGenerator{
     @FXML
     private Label questionField;
+    @FXML
+    private Label timerLabel;
     @FXML
     private RadioButton firstOptionField;
     @FXML
@@ -63,6 +68,29 @@ public class QuizUIController extends RandomNumberGenerator{
         secondOptionField.setText(option2);
         thirdOptionField.setText(option3);
         fourthOptionField.setText(option4);
+
+
+        //from here
+
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        int time = 10;
+                        timerLabel.setText("" + time);
+                        time--;
+                    }
+                });
+
+            }
+        };
+
+        timer.schedule(task, 0, 1000);
+
+        //to here
 
     }
 
