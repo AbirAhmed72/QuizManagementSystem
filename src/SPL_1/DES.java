@@ -48,7 +48,7 @@ public class DES {
         in.close();
     }
 
-    public static void doEncrypt() {
+    public static void doEncrypt(){
 
         File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
         //System.out.println(adminUsernameFile.getAbsolutePath());
