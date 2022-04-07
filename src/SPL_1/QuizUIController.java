@@ -27,20 +27,20 @@ public class QuizUIController extends RandomNumberGenerator{
     @FXML
     private RadioButton fourthOptionField;
     @FXML
-    private Button submitFirst;
+    public Button submitFirst;
     @FXML
     private Button showQuestion;
 
 
-    public int[] arrOfRand = randomNumbers(100,18);
+    public int[] arrOfRand = randomNumbers(23);
     public int score=0;
     public int q=0;
 
-    public String[][] QuesOptAns = new String[20][20];     //includes questions options answers
+    public String[][] QuesOptAns = new String[30][30];     //includes questions options answers
 
     public void showQuestionButton (ActionEvent event1) throws IOException {
 
-        for(int i=0; i<3; i++){
+        for(int i=0; i<4; i++){
             for(int j=0; j<6; j++){
                 try {
                     QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arrOfRand[i] + j);
@@ -97,7 +97,7 @@ public class QuizUIController extends RandomNumberGenerator{
             }
         };
 
-        timer.schedule(task, 0, 1000);
+        timer.schedule(task, 1000, 10000);
 
         //to here
 
@@ -106,6 +106,11 @@ public class QuizUIController extends RandomNumberGenerator{
     }
 
     public void submitFirstButton (ActionEvent event2) throws IOException {
+
+//        if(q==5){
+//            Main m = new Main();
+//            m.changeScene("studentDashboard.fxml");
+//        }
 //        String answer = "";
 //
 //        try {
@@ -136,10 +141,10 @@ public class QuizUIController extends RandomNumberGenerator{
         q++;
         showQuestionButton(event2);
 
-        if(q==3){
+        if(q==4){
             questionField.setText("You scored " + score);
-        }
 
+        }
         //questionField.setText("You scored " + score);
 
     }

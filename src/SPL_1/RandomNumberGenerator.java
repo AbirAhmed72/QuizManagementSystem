@@ -1,16 +1,36 @@
 package SPL_1;
 
+import java.util.HashMap;
+
 public class RandomNumberGenerator {
-    public static int[] randomNumbers(int size, int up){
+
+    static int size = 100;
+    static int[] arrRand = new int[size];
+    static int[] finalArr = new int[size];
+    static int[] temp = new int[size];
+
+    static int[] removeDuplicates(int[] temp, int n){
+
+        HashMap<Integer, Boolean> mp = new HashMap<>();
+
+        for (int i = 0; i < n; ++i){
+            if (mp.get(temp[i]) == null)
+                finalArr[i]=temp[i];
+
+            mp.put(temp[i], true);
+        }
+
+        return finalArr;
+    }
+    public static int[] randomNumbers(int up){
         int seed = 16807;
         int mod = 2147483647;
         int mult = 123456789;
-        //int size = 100;
-        int div = 39281473;
-        //int up = 60;
 
-        int[] arrRand = new int[size];
-        int[] finalArr = new int[size];
+        int div = 39281473;
+        //int up = 59;
+
+
 
         int x = ((seed*mult)) % mod;
         arrRand[0] = x/div;
@@ -25,29 +45,33 @@ public class RandomNumberGenerator {
         for(int i=0; i<size; i++){
 
             if(arrRand[i] <= up){
-                finalArr[j] = (arrRand[i] - (arrRand[i]%6)) + 1;
+                temp[j] = (arrRand[i] - (arrRand[i]%6)) + 1;
                 j++;
             }
         }
 
         j = 0;
-        int[] temp = new int[size];
-        for(int i=0; i<size-1; i++){
-            if (finalArr[i] != finalArr[i+1]){
-                temp[j++] = finalArr[i];
+
+        removeDuplicates(temp, size);
+
+        for(int i=0; i<size; i++){
+
+            if(finalArr[i] != 0){
+                finalArr[j] = finalArr[i];
+                j++;
             }
-        }
-        temp[j++] = finalArr[size-1];
-        // Changing original array
-        for(int i=0; i<j; i++){
-            finalArr[i] = temp[i];
         }
 
 //        for(int i=0; i<size; i++){
-//            System.out.print(Math.abs(finalArr[i]));
+//            //System.out.print(Math.abs(finalArr[i]));
+//
+//            System.out.print((finalArr[i]));
+//
 //            System.out.println(" ");
 //
 //        }
         return finalArr;
     }
 }
+
+
