@@ -27,20 +27,21 @@ public class QuizUIController extends RandomNumberGenerator{
     @FXML
     private RadioButton fourthOptionField;
     @FXML
-    public Button submitFirst;
+    private Button submitFirst;
     @FXML
     private Button showQuestion;
 
 
-    public int[] arrOfRand = randomNumbers(23);
+    public int[] arrOfRand = randomNumbers(59);
     public int score=0;
     public int q=0;
+    public int time = 100;
 
-    public String[][] QuesOptAns = new String[30][30];     //includes questions options answers
+    public String[][] QuesOptAns = new String[1000][1000];     //includes questions options answers
 
     public void showQuestionButton (ActionEvent event1) throws IOException {
 
-        for(int i=0; i<4; i++){
+        for(int i=0; i<10; i++){
             for(int j=0; j<6; j++){
                 try {
                     QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arrOfRand[i] + j);
@@ -81,23 +82,19 @@ public class QuizUIController extends RandomNumberGenerator{
 
         //from here
 
+
         Timer timer = new Timer();
-        TimerTask task = new TimerTask() {
+        TimerTask task1 = new TimerTask() {
             @Override
             public void run() {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        int time = 10;
-                        timerLabel.setText("" + time);
-                        time--;
-                    }
-                });
-
+                time--;
             }
         };
 
-        timer.schedule(task, 1000, 10000);
+            timerLabel.setText("" + time);
+            timer.scheduleAtFixedRate(task1, 0, 1000);
+
+
 
         //to here
 
@@ -141,11 +138,27 @@ public class QuizUIController extends RandomNumberGenerator{
         q++;
         showQuestionButton(event2);
 
-        if(q==4){
-            questionField.setText("You scored " + score);
 
+
+        Timer timer = new Timer();
+        TimerTask task2 = new TimerTask() {
+            @Override
+            public void run() {
+                if(q==10){
+                    Main m = new Main();
+                    try {
+                        m.changeScene("studentDashboard.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+
+        if(q==10){
+            questionField.setText("You scored " + score);
+            timer.schedule(task2, 3000);
         }
-        //questionField.setText("You scored " + score);
 
     }
 
