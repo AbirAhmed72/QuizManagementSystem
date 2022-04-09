@@ -7,6 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -48,15 +50,15 @@ public class QuizUIController extends RandomNumberGenerator{
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                System.out.println(QuesOptAns[i][j]);
+                //System.out.println(QuesOptAns[i][j]);
             }
         }
 
-        String question = "";
-        String option1 = "";
-        String option2 = "";
-        String option3 = "";
-        String option4 = "";
+//        String question = "";
+//        String option1 = "";
+//        String option2 = "";
+//        String option3 = "";
+//        String option4 = "";
 
 //        try {
 //
@@ -91,15 +93,10 @@ public class QuizUIController extends RandomNumberGenerator{
             }
         };
 
-            timerLabel.setText("" + time);
-            timer.scheduleAtFixedRate(task1, 0, 1000);
-
-
+        timerLabel.setText("" + time);
+        timer.scheduleAtFixedRate(task1, 0, 1000);
 
         //to here
-
-
-
     }
 
     public void submitFirstButton (ActionEvent event2) throws IOException {
@@ -118,6 +115,34 @@ public class QuizUIController extends RandomNumberGenerator{
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
+
+        FileWriter answersFileWriter = new FileWriter("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\answerSheet.txt", true);
+        BufferedWriter ansBufferedWriter = new BufferedWriter(answersFileWriter);
+
+        String option1 = firstOptionField.getText();
+        String option2 = secondOptionField.getText();
+        String option3 = thirdOptionField.getText();
+        String option4 = fourthOptionField.getText();
+
+        if (firstOptionField.isSelected()) {
+            ansBufferedWriter.write("You chose: _" + option1 + "_ Correct ans: " + QuesOptAns[q][5] + "\n");
+            ansBufferedWriter.close();
+        }
+
+        else if (secondOptionField.isSelected()) {
+            ansBufferedWriter.write("You chose: _" + option2 + "_ Correct ans: " + QuesOptAns[q][5] + "\n");
+            ansBufferedWriter.close();
+        }
+
+        else if (thirdOptionField.isSelected()){
+            ansBufferedWriter.write("You chose: _" + option3 + "_ Correct ans: " + QuesOptAns[q][5] + "\n");
+            ansBufferedWriter.close();
+        }
+
+        else if (fourthOptionField.isSelected()) {
+            ansBufferedWriter.write("You chose: _" + option4 + "_ Correct ans: " + QuesOptAns[q][5] + "\n");
+            ansBufferedWriter.close();
+        }
 
         if (firstOptionField.isSelected() && firstOptionField.getText().equals(QuesOptAns[q][5])) {
             score++;
@@ -155,8 +180,12 @@ public class QuizUIController extends RandomNumberGenerator{
             }
         };
 
+        //int incorrect = 10 - score;
+
         if(q==10){
             questionField.setText("You scored " + score);
+//            ansBufferedWriter.write("Total Correct: " + score + "Total Incorrect: " + incorrect +"\n");
+//            ansBufferedWriter.close();
             timer.schedule(task2, 3000);
         }
 

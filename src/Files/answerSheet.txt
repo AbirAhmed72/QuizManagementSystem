@@ -1,0 +1,10 @@
+You chose: _0.85_ Correct ans: 0.85
+You chose: _dhaka_ Correct ans: dhaka
+You chose: _$40_ Correct ans: $30
+You chose: _Abiir_ Correct ans: Abir
+You chose: _green_ Correct ans: blue
+You chose: _5_ Correct ans: Negative 10
+You chose: _25_ Correct ans: 22
+You chose: _7_ Correct ans: Negative 4
+You chose: _Chinese_ Correct ans: Chinese
+You chose: _DNA_ Correct ans: Hard
