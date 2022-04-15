@@ -46,7 +46,7 @@ public class QuizUIController extends RandomNumberGenerator{
         for(int i=0; i<10; i++){
             for(int j=0; j<6; j++){
                 try {
-                    QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arrOfRand[i] + j);
+                    QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arrOfRand[i] + j);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -62,16 +62,16 @@ public class QuizUIController extends RandomNumberGenerator{
 
 //        try {
 //
-//            question = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0] - 1);
+//            question = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0] - 1);
 //            //System.out.println(question);
-//            option1 = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0]);
-//            option2 = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0] + 1);
-//            option3 = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0] + 2);
-//            option4 = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0] + 3);
-//    //            option1 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt")).get(arr[0] + 1);
-//    //            option2 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt")).get(arr[0] + 2);
-//    //            option3 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt")).get(arr[0] + 3);
-//    //            option4 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt")).get(arr[0] + 4);
+//            option1 = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0]);
+//            option2 = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0] + 1);
+//            option3 = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0] + 2);
+//            option4 = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0] + 3);
+//    //            option1 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\allQuestions.txt")).get(arr[0] + 1);
+//    //            option2 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\allQuestions.txt")).get(arr[0] + 2);
+//    //            option3 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\allQuestions.txt")).get(arr[0] + 3);
+//    //            option4 = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\allQuestions.txt")).get(arr[0] + 4);
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
@@ -108,8 +108,8 @@ public class QuizUIController extends RandomNumberGenerator{
 //        String answer = "";
 //
 //        try {
-//            //question = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\questionsFile.txt")).get(arr[0]-1);
-//            answer = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arr[0] + 5);
+//            //question = Files.readAllLines(Paths.get("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\allQuestions.txt")).get(arr[0]-1);
+//            answer = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arr[0] + 5);
 //            System.out.println(answer);
 //
 //        } catch (IOException e) {

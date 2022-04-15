@@ -1,0 +1,31 @@
+
+1. How old am I?
+19
+22
+21
+25
+22
+2. What's my name?
+Abir
+Abeer
+Aber
+Abiir
+Abir
+3. What is the location that I reside on?
+ctg
+khulna
+barisal
+dhaka
+dhaka
+4. What's my favorite language?
+English
+Java
+C++
+Chinese
+Chinese
+5. What's my favorite color?
+black
+blue
+red
+green
+blue

@@ -32,7 +32,7 @@ public class StudentDashboardController extends RandomNumberGenerator{
 //        for(int i=0; i<3; i++){
 //            for(int j=0; j<6; j++){
 //                try {
-//                    QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/questionsFile.txt")).get(arrOfRand[i] + j);
+//                    QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arrOfRand[i] + j);
 //                } catch (IOException e) {
 //                    e.printStackTrace();
 //                }

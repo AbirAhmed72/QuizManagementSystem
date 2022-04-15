@@ -8,3 +8,25 @@ You chose: _25_ Correct ans: 22
 You chose: _7_ Correct ans: Negative 4
 You chose: _Chinese_ Correct ans: Chinese
 You chose: _DNA_ Correct ans: Hard
+You chose: _0.15_ Correct ans: 0.85
+You chose: _khulna_ Correct ans: dhaka
+You chose: _$20_ Correct ans: $30
+You chose: _Abeer_ Correct ans: Abir
+You chose: _blue_ Correct ans: blue
+You chose: _Negative 5_ Correct ans: Negative 10
+You chose: _22_ Correct ans: 22
+You chose: _Negative 3_ Correct ans: Negative 4
+You chose: _Java_ Correct ans: Chinese
+You chose: _Hard_ Correct ans: Hard
+You chose: _0.85_ Correct ans: 0.85
+You chose: _dhaka_ Correct ans: dhaka
+You chose: _$40_ Correct ans: $30
+You chose: _Abiir_ Correct ans: Abir
+You chose: _green_ Correct ans: blue
+You chose: _5_ Correct ans: Negative 10
+You chose: _25_ Correct ans: 22
+You chose: _7_ Correct ans: Negative 4
+You chose: _Chinese_ Correct ans: Chinese
+You chose: _DNA_ Correct ans: Hard
+You chose: _null_ Correct ans: null
+You chose: _null_ Correct ans: null
