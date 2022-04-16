@@ -101,7 +101,7 @@
                         <Font name="Comic Sans MS" size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="difficultyComboBox" editable="true" layoutX="41.0" layoutY="56.0" prefHeight="34.0" prefWidth="134.0" promptText="Choose Difficulty" />
+                  <ComboBox fx:id="difficultyComboBox" layoutX="41.0" layoutY="56.0" prefHeight="34.0" prefWidth="134.0" promptText="Choose Difficulty" />
                </children>
             </Pane>
          </children>

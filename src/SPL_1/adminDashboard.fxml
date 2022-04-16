@@ -32,7 +32,7 @@
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="249.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Input Percentage" textFill="#ffac3d">
+            <Button fx:id="inputPercent" layoutX="200.0" layoutY="249.0" mnemonicParsing="false" onAction="#inputPercentButton" prefHeight="41.0" prefWidth="253.0" text="Input Percentage" textFill="#ffac3d">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>

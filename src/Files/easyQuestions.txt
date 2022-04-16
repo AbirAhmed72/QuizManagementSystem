@@ -1,31 +1,61 @@
 
-1. How old am I?
+E1. How old am I?
 19
 22
 21
 25
 22
-2. What's my name?
+E2. What's my name?
 Abir
 Abeer
 Aber
 Abiir
 Abir
-3. What is the location that I reside on?
+E3. What is the location that I reside on?
 ctg
 khulna
 barisal
 dhaka
 dhaka
-4. What's my favorite language?
+E4. What's my favorite language?
 English
 Java
 C++
 Chinese
 Chinese
-5. What's my favorite color?
+E5. What's my favorite color?
 black
 blue
 red
 green
 blue
+E6. The mutual recursion is also termed as ______
+indirect recursion
+constructive recursion
+generative recursion
+definitive recursion
+indirect recursion
+E7. In which of the following problems recurrence relation holds?
+Optimal substructure
+Tower of Hanoi
+Hallmark substitution
+Longest common subsequence
+Tower of Hanoi
+E8. Which of the following functions generates new data at each step of a method?
+corecursive function
+structural recursive function
+unirecursive function
+indirect function
+corecursive function
+E9. Every recursive algorithm must have the problem of ________
+overhead of repeated function calls
+collision of different function calls
+searching for all duplicate elements
+make only two recursive calls
+overhead of repeated function calls
+E10. If the height of a binary tree is 54, how many null pointers are there as children?
+1267
+3^58
+56
+2^55
+2^55

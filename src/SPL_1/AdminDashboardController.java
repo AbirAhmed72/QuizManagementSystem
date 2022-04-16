@@ -12,14 +12,22 @@ public class AdminDashboardController {
     private Button adminDashboardBack;
     @FXML
     private Button addQuestions;
+    @FXML
+    private Button inputPercent;
 
-    public void adminDashboardBackButton(ActionEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("homepage.fxml");
-    }
 
     public void addQuestionsButton(ActionEvent event) throws IOException {
         Main m = new Main();
         m.changeScene("addQuestions.fxml");
+    }
+
+    public void inputPercentButton(ActionEvent event) throws IOException{
+        Main m = new Main();
+        m.changeScene("inputPercentage.fxml");
+    }
+
+    public void adminDashboardBackButton(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("homepage.fxml");
     }
 }
