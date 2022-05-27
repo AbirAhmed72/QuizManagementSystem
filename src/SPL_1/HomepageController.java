@@ -8,6 +8,9 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 
+import static SPL_1.DES.doDecrypt;
+import static SPL_1.DES.doEncrypt;
+
 public class HomepageController {
 
     @FXML
@@ -24,6 +27,8 @@ public class HomepageController {
     private Button stuSignProceed;
 
     public void adminLoginProceed(ActionEvent event) throws IOException {
+//        doEncrypt();
+//        doDecrypt();
         Main m = new Main();
         m.changeScene("adminLogin.fxml");
     }

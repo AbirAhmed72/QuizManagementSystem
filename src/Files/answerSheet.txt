@@ -50,3 +50,14 @@ You chose: _28_ Correct ans: 14
 You chose: _Negative 5_ Correct ans: Negative 10
 You chose: _17_ Correct ans: 14
 You chose: _Negative 10_ Correct ans: Negative 10
+You chose: _0.85_ Correct ans: 0.85
+You chose: _10_ Correct ans: 24
+You chose: _Negative 4_ Correct ans: Negative 4
+You chose: _138_ Correct ans: 2
+You chose: _A disconnected graph by deleting a vertex_ Correct ans: A disconnected graph by deleting a vertex
+You chose: _hamiltonian graph_ Correct ans: vector space
+You chose: _15_ Correct ans: 14
+You chose: _0_ Correct ans: Negative 10
+You chose: _18_ Correct ans: 14
+You chose: _O(n2)_ Correct ans: O(n)
+You chose: _null_ Correct ans: null

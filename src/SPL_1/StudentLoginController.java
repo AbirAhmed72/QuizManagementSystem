@@ -10,6 +10,9 @@ import javafx.scene.control.TextField;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import static SPL_1.DES.doDecrypt;
+import static SPL_1.DES.doEncrypt;
+
 
 public class StudentLoginController {
 
@@ -47,8 +50,12 @@ public class StudentLoginController {
         try {
             File usernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentUsername.txt");
             //System.out.println(usernameFile.getAbsolutePath());
-            File passwordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentPassword.txt");
+            File passwordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentTemp.txt");
             //System.out.println(passwordFile.getAbsolutePath());
+            File passwordTemp = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\studentPassword.txt");
+
+            doEncrypt(passwordFile, passwordTemp);
+            doDecrypt(passwordTemp, passwordTemp);
 
             Scanner usernameScanner = new Scanner(usernameFile);
             Scanner passwordScanner = new Scanner(passwordFile);

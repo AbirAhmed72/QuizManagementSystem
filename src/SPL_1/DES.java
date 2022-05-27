@@ -48,16 +48,18 @@ public class DES {
         in.close();
     }
 
-    public static void doEncrypt(){
+    public static void doEncrypt(File from, File to){
 
-        File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
-        //System.out.println(adminUsernameFile.getAbsolutePath());
+//        File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
+//        System.out.println(adminUsernameFile.getAbsolutePath());
         File adminPasswordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
         //System.out.println(adminPasswordFile.getAbsolutePath());
+        File adminPassTempFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminTemp.txt");
+
 
         try {
 
-            encryptDecrypt("12345678", Cipher.ENCRYPT_MODE, adminPasswordFile, adminPasswordFile);
+            encryptDecrypt("12345678", Cipher.ENCRYPT_MODE, from, to);
 
             System.out.println("Encryption complete");
 
@@ -69,16 +71,18 @@ public class DES {
         }
     }
 
-    public static void doDecrypt() {
+    public static void doDecrypt(File from, File to) {
 
-        File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
+        //File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
         //System.out.println(adminUsernameFile.getAbsolutePath());
         File adminPasswordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
         //System.out.println(adminPasswordFile.getAbsolutePath());
+        File adminPassTempFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminTemp.txt");
+
 
         try {
 
-            encryptDecrypt("12345678", Cipher.DECRYPT_MODE, adminPasswordFile, adminPasswordFile);
+            encryptDecrypt("12345678", Cipher.DECRYPT_MODE, from, to);
 
             System.out.println("Decryption complete");
 

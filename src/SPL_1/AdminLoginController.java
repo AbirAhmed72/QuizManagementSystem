@@ -7,8 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 import static SPL_1.DES.doDecrypt;
@@ -27,6 +26,10 @@ public class AdminLoginController {
     @FXML
     private PasswordField adminPassword;
 
+
+    public AdminLoginController() throws FileNotFoundException {
+    }
+
     public void adminLoginBackButton(ActionEvent event) throws IOException {
         Main m = new Main();
         m.changeScene("homepage.fxml");
@@ -34,6 +37,14 @@ public class AdminLoginController {
     }
 
     public void adminLoginButton(ActionEvent event) throws IOException {
+
+//        storedTempPassword = adminPassword.getText();
+//        System.out.println(storedTempPassword);
+//        FileWriter passFileWriter = new FileWriter("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminTemp.txt");
+//        BufferedWriter passBufferedWriter = new BufferedWriter(passFileWriter);
+//        passBufferedWriter.write(storedTempPassword);
+//        System.out.println(tempPasswordScanner.next());
+//        doEncrypt(adminPasswordTemp, adminPasswordTemp);
         checkLogin();
 
     }
@@ -41,20 +52,25 @@ public class AdminLoginController {
     private void checkLogin() throws IOException {
         Main m = new Main();
 
+
         String storedUsername = "";
         String storedPassword = "";
+
 
 //        System.out.println("storedUsername: " + storedUsername);
 //        System.out.println("storedPassword: " + storedPassword);
 
 
         try {
+
             File adminUsernameFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminUsername.txt");
             //System.out.println(adminUsernameFile.getAbsolutePath());
-            File adminPasswordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
+            File adminPasswordFile = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminTemp.txt");
             //System.out.println(adminPasswordFile.getAbsolutePath());
+            File adminPasswordTemp = new File("C:\\Users\\Admin\\IdeaProjects\\QuizManagementSystem\\src\\Files\\adminPassword.txt");
 
-            //doEncrypt();
+            doEncrypt(adminPasswordFile, adminPasswordTemp);
+            doDecrypt(adminPasswordTemp, adminPasswordTemp);
 
 
             Scanner usernameScanner = new Scanner(adminUsernameFile);
@@ -65,17 +81,19 @@ public class AdminLoginController {
 
             usernameScanner.close();
             passwordScanner.close();
+
+
         }catch(Exception e){
             System.out.println("Exception caught.");
             e.printStackTrace();
         }
 
-        //doDecrypt();
+//        doDecrypt();
 
 //        System.out.println("storedUsername: " + storedUsername);
 //        System.out.println("storedPassword: " + storedPassword);
 
-        if(adminUser.getText().toString().equals(storedUsername) && adminPassword.getText().toString().equals(storedPassword)) {
+        if(adminUser.getText().toString().equals(storedUsername) && adminPassword.getText().equals(storedPassword)) {
             adminError.setText("Success!");
 
             m.changeScene("adminDashboard.fxml");
