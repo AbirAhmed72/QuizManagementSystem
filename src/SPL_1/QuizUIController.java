@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.*;
 
 public class QuizUIController extends RandomNumberGenerator{
     @FXML
@@ -48,9 +49,9 @@ public class QuizUIController extends RandomNumberGenerator{
                 try {
                     QuesOptAns[i][j] = Files.readAllLines(Paths.get("src/Files/allQuestions.txt")).get(arrOfRand[i] + j);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.out.println("Could not load questions in the array");
                 }
-                //System.out.println(QuesOptAns[i][j]);
+//                System.out.println(QuesOptAns[i][j]);
             }
         }
 

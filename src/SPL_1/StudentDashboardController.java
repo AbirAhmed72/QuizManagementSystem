@@ -15,6 +15,8 @@ public class StudentDashboardController extends RandomNumberGenerator{
     @FXML
     private Button startQuiz;
     @FXML
+    private Button startEndlessQuiz;
+    @FXML
     private Button viewAns;
 
 //    public int[] arrOfRand = randomNumbers(100,18);
@@ -42,6 +44,12 @@ public class StudentDashboardController extends RandomNumberGenerator{
         Main m = new Main();
         m.changeScene("quizUI.fxml");
 
+    }
+
+    public void startEndlessQuizButton(ActionEvent event) throws IOException {
+
+        Main m = new Main();
+        m.changeScene("endlessQuizUI.fxml");
     }
 
     public void viewAnsButton(ActionEvent event) throws IOException {

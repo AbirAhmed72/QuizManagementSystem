@@ -17,7 +17,7 @@
                   <Image url="@../Images/quiz bg.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="studentDashboardBack" layoutX="200.0" layoutY="420.0" mnemonicParsing="false" onAction="#studentDashboardBackButton" prefHeight="41.0" prefWidth="253.0" text="Log Out" textFill="RED">
+            <Button fx:id="studentDashboardBack" layoutX="200.0" layoutY="474.0" mnemonicParsing="false" onAction="#studentDashboardBackButton" prefHeight="41.0" prefWidth="253.0" text="Log Out" textFill="RED">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
@@ -32,12 +32,17 @@
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="viewAns" layoutX="200.0" layoutY="249.0" mnemonicParsing="false" onAction="#viewAnsButton" prefHeight="41.0" prefWidth="253.0" text="View Answersheet" textFill="#ffac3d">
+            <Button fx:id="viewAns" layoutX="199.0" layoutY="316.0" mnemonicParsing="false" onAction="#viewAnsButton" prefHeight="41.0" prefWidth="253.0" text="View Answersheet" textFill="#ffac3d">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="323.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
+            <Button layoutX="199.0" layoutY="387.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="startEndlessQuiz" layoutX="199.0" layoutY="249.0" mnemonicParsing="false" onAction="#startEndlessQuizButton" prefHeight="41.0" prefWidth="253.0" text="Start Endless Quiz" textFill="#1e7abc">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>

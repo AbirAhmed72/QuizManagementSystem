@@ -1,61 +1,61 @@
 
-M9. In a get-together party, every person present shakes the hand of every other person. If there were 90 handshakes in all, how many persons were present at the party?
-15
-14
-16
-17
-14
+E3. What is the location that I reside on?
+ctg
+khulna
+barisal
+dhaka
+dhaka
+E2. What's my name?
+Abir
+Abeer
+Aber
+Abiir
+Abir
+E1. How old am I?
+19
+22
+21
+25
+22
 M3. In a group of 267 people how many friends are there who have an identical number of friends in that group?
 266
 2
 138
 202
 2
-M8. A group of 20 girls plucked a total of 200 oranges. How many oranges can be plucked one of them?
-24
-10
-32
-7
-24
 M2. A drawer contains 12 red and 12 blue socks, all unmatched. A person takes socks out at random in the dark. How many socks must he take out to be sure that he has at least two blue socks?
 18
 35
 28
 14
 14
-H9. What is a separable graph?
-A disconnected graph by deleting a vertex
-A disconnected graph by removing an edge
-A disconnected graph by removing one edge and a vertex
-A simple graph which does not contain a cycle
-A disconnected graph by deleting a vertex
+M1. How was the test?
+Easy
+Hard
+Medium
+DNA
+Hard
+M5. How many numbers must be selected from the set {1, 2, 3, 4} to guarantee that at least one pair of these numbers add up to 7?
+14
+5
+9
+24
+5
+M4. When four coins are tossed simultaneously, in _______ number of the outcomes at most two of the coins will turn up as heads.
+17
+28
+11
+43
+11
 H3. Which of the following numbers is farthest from the number 1 on the number line?
 Negative 10
 Negative 5
 0
 5
 Negative 10
-H8. A binary cycle space forms a ______ over the two element field.
-triangular graph
-vector space
-binary tree
-hamiltonian graph
-vector space
 H2. If 5x plus 32 equals 4 minus 2x what is the value of x ?
 Negative 4
 Negative 3
 4
 7
 Negative 4
-H5. A certain jar contains 60 jelly beans — 22 white, 18 green, 11 yellow, 5 red, and 4 purple. If a jelly bean is to be chosen at random, what is the probability that the jelly bean will be neither red nor purple?
-0.09
-0.15
-0.54
-0.85
-0.85
-H7. For an n-vertex undirected graph, the time required to find a cycle is ____________
-O(n)
-O(n2)
-O(n+1)
-O(logn)
-O(n)
