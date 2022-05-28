@@ -14,11 +14,19 @@ public class AdminDashboardController {
     private Button addQuestions;
     @FXML
     private Button inputPercent;
+    @FXML
+    private Button changePass;
+
 
 
     public void addQuestionsButton(ActionEvent event) throws IOException {
         Main m = new Main();
         m.changeScene("addQuestions.fxml");
+    }
+
+    public void changePassButton(ActionEvent event) throws IOException{
+        Main m = new Main();
+        m.changeScene("adminChangePass.fxml");
     }
 
     public void inputPercentButton(ActionEvent event) throws IOException{

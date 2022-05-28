@@ -18,3 +18,13 @@ You chose: _ctg_ Correct ans: dhaka
 You chose: _DNA_ Correct ans: Hard
 You chose: _138_ Correct ans: 2
 You chose: _Negative 4_ Correct ans: Negative 4
+You chose: _Negative 10_ Correct ans: Negative 10
+You chose: _21_ Correct ans: 22
+You chose: _17_ Correct ans: 11
+You chose: _Aber_ Correct ans: Abir
+You chose: _35_ Correct ans: 14
+You chose: _24_ Correct ans: 5
+You chose: _ctg_ Correct ans: dhaka
+You chose: _Hard_ Correct ans: Hard
+You chose: _138_ Correct ans: 2
+You chose: _Negative 4_ Correct ans: Negative 4

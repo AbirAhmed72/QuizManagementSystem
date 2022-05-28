@@ -37,7 +37,7 @@
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="323.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
+            <Button fx:id="changePass" layoutX="200.0" layoutY="323.0" mnemonicParsing="false" onAction="#changePassButton" prefHeight="41.0" prefWidth="253.0" text="Change Password" textFill="RED">
                <font>
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>

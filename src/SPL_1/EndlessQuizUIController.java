@@ -151,12 +151,12 @@ public class EndlessQuizUIController extends RandomNumberGenerator{
 
         if (count==0 && r==0) {
             questionField.setText("Your Game is over!");
-            timer.schedule(task2, 3000);
+            timer.schedule(task2, 1500);
 //            m.changeScene("studentDashboard.fxml");
         }
         else if (count==5 && r==2) {
             questionField.setText("You beat the Game!");
-            timer.schedule(task2, 3000);
+            timer.schedule(task2, 1500);
 //            m.changeScene("studentDashboard.fxml");
         }
         else if(count==0 && r!=0){
