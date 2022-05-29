@@ -1,22 +1,22 @@
 
-E1. How old am I?
-19
-22
-21
-25
-22
-E2. What's my name?
-Abir
-Abeer
-Aber
-Abiir
-Abir
-E3. What is the location that I reside on?
-ctg
-khulna
-barisal
-dhaka
-dhaka
+E1. What is pseudo prime number?
+is a probable prime and is not a prime number
+is a prime number
+does not share any property with prime number
+none of the mentioned
+is a probable prime and is not a prime number
+E2. Pseudo prime are classified based on property which they satisfy, which of the following are classes of pseudoprimes?
+Fermat pseudoprime
+Fibonacci pseudoprime
+Euler pseudoprime
+All of the mentioned
+All of the mentioned
+E3. If there exist no integer x such that x2 ? q (mod n). then q is called __________
+Quadratic Residue
+Quadratic Nonresidue
+Pseudoprime
+None of the mentioned
+Quadratic Nonresidue
 E4. What's my favorite language?
 English
 Java

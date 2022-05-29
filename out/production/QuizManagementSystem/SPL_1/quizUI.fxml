@@ -21,7 +21,7 @@
                         <Image url="@../Images/quiz bg.jpg" />
                      </image>
                   </ImageView>
-                  <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="26.0" prefHeight="127.0" prefWidth="607.0">
+                  <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="26.0" prefHeight="127.0" prefWidth="607.0" wrapText="true">
                      <font>
                         <Font name="Comic Sans MS Bold" size="20.0" />
                      </font>

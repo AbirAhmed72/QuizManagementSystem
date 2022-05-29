@@ -1,22 +1,22 @@
 
-E3. What is the location that I reside on?
-ctg
-khulna
-barisal
-dhaka
-dhaka
-E2. What's my name?
-Abir
-Abeer
-Aber
-Abiir
-Abir
-E1. How old am I?
-19
-22
-21
-25
-22
+E3. If there exist no integer x such that x2 ? q (mod n). then q is called __________
+Quadratic Residue
+Quadratic Nonresidue
+Pseudoprime
+None of the mentioned
+Quadratic Nonresidue
+E2. Pseudo prime are classified based on property which they satisfy, which of the following are classes of pseudoprimes?
+Fermat pseudoprime
+Fibonacci pseudoprime
+Euler pseudoprime
+All of the mentioned
+All of the mentioned
+E1. What is pseudo prime number?
+is a probable prime and is not a prime number
+is a prime number
+does not share any property with prime number
+none of the mentioned
+is a probable prime and is not a prime number
 M3. In a group of 267 people how many friends are there who have an identical number of friends in that group?
 266
 2
@@ -29,12 +29,12 @@ M2. A drawer contains 12 red and 12 blue socks, all unmatched. A person takes so
 28
 14
 14
-M1. How was the test?
-Easy
-Hard
-Medium
-DNA
-Hard
+M1. Which of the following is a quardratic residue of 11?
+4
+5
+9
+All of the mentioned
+All of the mentioned
 M5. How many numbers must be selected from the set {1, 2, 3, 4} to guarantee that at least one pair of these numbers add up to 7?
 14
 5

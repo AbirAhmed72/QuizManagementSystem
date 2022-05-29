@@ -28,3 +28,33 @@ You chose: _ctg_ Correct ans: dhaka
 You chose: _Hard_ Correct ans: Hard
 You chose: _138_ Correct ans: 2
 You chose: _Negative 4_ Correct ans: Negative 4
+You chose: _Negative 5_ Correct ans: Negative 10
+You chose: _22_ Correct ans: 22
+You chose: _28_ Correct ans: 11
+You chose: _Abeer_ Correct ans: Abir
+You chose: _35_ Correct ans: 14
+You chose: _5_ Correct ans: 5
+You chose: _Quadratic Nonresidue_ Correct ans: Quadratic Nonresidue
+You chose: _Hard_ Correct ans: Hard
+You chose: _2_ Correct ans: 2
+You chose: _Negative 3_ Correct ans: Negative 4
+You chose: _Negative 5_ Correct ans: Negative 10
+You chose: _22_ Correct ans: 22
+You chose: _28_ Correct ans: 11
+You chose: _Abeer_ Correct ans: Abir
+You chose: _35_ Correct ans: 14
+You chose: _5_ Correct ans: 5
+You chose: _Quadratic Nonresidue_ Correct ans: Quadratic Nonresidue
+You chose: _Hard_ Correct ans: Hard
+You chose: _2_ Correct ans: 2
+You chose: _Negative 3_ Correct ans: Negative 4
+You chose: _0_ Correct ans: Negative 10
+You chose: _does not share any property with prime number_ Correct ans: is a probable prime and is not a prime number
+You chose: _11_ Correct ans: 11
+You chose: _Euler pseudoprime_ Correct ans: All of the mentioned
+You chose: _28_ Correct ans: 14
+You chose: _9_ Correct ans: 5
+You chose: _Pseudoprime_ Correct ans: Quadratic Nonresidue
+You chose: _Medium_ Correct ans: Hard
+You chose: _138_ Correct ans: 2
+You chose: _4_ Correct ans: Negative 4

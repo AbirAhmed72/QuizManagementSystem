@@ -1,10 +1,10 @@
 
-M1. How was the test?
-Easy
-Hard
-Medium
-DNA
-Hard
+M1. Which of the following is a quardratic residue of 11?
+4
+5
+9
+All of the mentioned
+All of the mentioned
 M2. A drawer contains 12 red and 12 blue socks, all unmatched. A person takes socks out at random in the dark. How many socks must he take out to be sure that he has at least two blue socks?
 18
 35

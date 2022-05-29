@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SPL_1.EndlessQuizUIController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
@@ -24,7 +23,7 @@
                               <Image url="@../Images/quiz bg.jpg" />
                            </image>
                         </ImageView>
-                        <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="26.0" prefHeight="127.0" prefWidth="607.0">
+                        <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="26.0" prefHeight="127.0" prefWidth="607.0" wrapText="true">
                            <font>
                               <Font name="Comic Sans MS Bold" size="20.0" />
                            </font>
