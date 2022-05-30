@@ -58,3 +58,13 @@ You chose: _Pseudoprime_ Correct ans: Quadratic Nonresidue
 You chose: _Medium_ Correct ans: Hard
 You chose: _138_ Correct ans: 2
 You chose: _4_ Correct ans: Negative 4
+You chose: _5_ Correct ans: Negative 10
+You chose: _none of the mentioned_ Correct ans: is a probable prime and is not a prime number
+You chose: _43_ Correct ans: 11
+You chose: _All of the mentioned_ Correct ans: All of the mentioned
+You chose: _14_ Correct ans: 14
+You chose: _24_ Correct ans: 5
+You chose: _None of the mentioned_ Correct ans: Quadratic Nonresidue
+You chose: _All of the mentioned_ Correct ans: All of the mentioned
+You chose: _202_ Correct ans: 2
+You chose: _7_ Correct ans: Negative 4

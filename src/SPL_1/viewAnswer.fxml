@@ -81,7 +81,7 @@
                               <Font name="Comic Sans MS" size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="l11" alignment="CENTER" layoutX="44.0" layoutY="449.0" prefHeight="23.0" prefWidth="595.0" text="You chose :_blaanala_  Correct ans: blabalhablab">
+                        <Label fx:id="l11" alignment="CENTER" layoutX="44.0" layoutY="449.0" prefHeight="23.0" prefWidth="595.0">
                            <font>
                               <Font name="Comic Sans MS" size="16.0" />
                            </font>

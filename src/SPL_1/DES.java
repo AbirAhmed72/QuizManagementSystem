@@ -61,7 +61,7 @@ public class DES {
 
             encryptDecrypt("12345678", Cipher.ENCRYPT_MODE, from, to);
 
-            System.out.println("Encryption complete");
+//            System.out.println("Encryption complete");
 
         } catch (InvalidKeyException | NoSuchAlgorithmException | InvalidKeySpecException |
                 NoSuchPaddingException | IOException e) {
@@ -84,7 +84,7 @@ public class DES {
 
             encryptDecrypt("12345678", Cipher.DECRYPT_MODE, from, to);
 
-            System.out.println("Decryption complete");
+//            System.out.println("Decryption complete");
 
         } catch (InvalidKeyException | NoSuchAlgorithmException | InvalidKeySpecException |
                 NoSuchPaddingException | IOException e) {
